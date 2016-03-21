@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>source</title>
+    <style>
+        *{margin:0;padding:0;border:0; border-color:red; font-size:0}
+        .black{display:inline-block;width:100px; height:100px; background-color:black}
+        .white{display:inline-block;width:100px; height:100px; background-color:white}
+        #board{width:400px;height:400px;}
+    </style>
+</head>
+<body>
+
+<div id="board">
+
+<script>
+    var board = document.getElementById("board");
+
+    var black = "<span class=\"black\"></span>"
+    var white = "<span class=\"white\"></span>"
+
+    var color = black;
+
+    for(var i=0; i<4; i++){
+        for(var j=0; j<4; j++){
+          if(color==black){
+            board.innerHTML += black;
+            color = white;
+          }
+          else{
+            board.innerHTML += white;
+            color = black;
+          }
+
+        }
+    if(color==black){
+      color = white;
+    }
+    else{
+      color = black;
+    }
+}
+</script>
+</div>
+</body>
+</html>
