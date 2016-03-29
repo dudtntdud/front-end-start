@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,12 +16,9 @@
 
 <script>
     var board = document.getElementById("board");
-
     var black = "<span class=\"black\"></span>"
     var white = "<span class=\"white\"></span>"
-
     var color = black;
-
     for(var i=0; i<4; i++){
         for(var j=0; j<4; j++){
           if(color==black){
@@ -33,7 +29,6 @@
             board.innerHTML += white;
             color = black;
           }
-
         }
     if(color==black){
       color = white;
