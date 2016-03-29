@@ -1,0 +1,54 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.container {
+  max-width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  border-style: solid;
+  border-color:black;
+  border-width: 1px;
+  min-height: 100%;
+  background: white;
+}
+
+#header{
+  width : 500px;
+  height: 100px;
+  margin: 0;
+  padding:0;
+  border-bottom-style: solid;
+  border-bottom-color:black;
+  border-bottom-width: 1px;
+
+}
+
+.box{
+  font-size:0
+  padding:0;
+  margin:0;
+  width:50px;
+  height:50px;
+  display: inline-block;
+  margin-bottom:-4px;
+
+}
+
+#board{
+  width:500px;
+  height:600px;
+}
+
+.redbox{
+  background-color: red;
+  font-size:0
+  padding:0;
+  margin:0;
+  width:50px;
+  height:50px;
+  display: inline-block;
+  margin-bottom:-4px;
+
+}

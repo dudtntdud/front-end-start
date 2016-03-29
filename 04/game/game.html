@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+<div class="container">
+  <div id="header">
+    <script type="text/template" id="ScoreTemplate">Score : {score}</script>
+  </div>
+  <div id="board">
+    <script>
+      var cnt=1;
+
+      for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+          board.innerHTML += "<div class=\"box\" id=\""+cnt+"\"></div>"
+          cnt++;
+        }
+      }
+    </script>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

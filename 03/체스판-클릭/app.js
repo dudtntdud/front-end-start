@@ -6,8 +6,10 @@
 
     var color = black;
 
-var beforeTarget = null;
-var beforeColor=null;
+    var beforeTarget = null;
+    var beforeColor=null;
+
+    var boardsize = 4;
 
   board.addEventListener('click', function(target){
     if(beforeTarget != null){
@@ -16,50 +18,11 @@ var beforeColor=null;
     beforeTarget = target.srcElement;
     beforeColor = target.srcElement.getAttribute("class")
     target.srcElement.setAttribute("class", "red") ;
-
-    /*
-
-
-    board.innerHTML = "";
-
-    var x = Math.floor(target.clientX/100)
-    var y = Math.floor(target.clientY/100)
-
-    for(var i=0; i<4; i++){
-        for(var j=0; j<4; j++){
-          if(color==white){
-            if(x==j && y==i){
-              board.innerHTML += red;
-            }
-            else{
-              board.innerHTML += white;
-            }
-            color = black;
-          }
-          else{
-            if(x==j && y==i){
-              board.innerHTML += red;
-            }
-            else{
-              board.innerHTML += black;
-            }
-            color = white;
-          }
-
-        }
-      if(color==white){
-        color = black;
-      }
-      else{
-        color = white;
-      }
-  }
-  */
   });
 
 
-    for(var i=0; i<4; i++){
-        for(var j=0; j<4; j++){
+    for(var i=0; i<boardsize; i++){
+        for(var j=0; j<boardsize; j++){
           if(color==black){
             board.innerHTML += black;
             color = white;
