@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>open API</title>
+</head>
+<body>
+  <form onsubmit="return false">
+    <input type="text" name="text" placeholder="검색하세요" id="inputString">
+  </form>
+  <ul id="wrap"></ul>
+
+  <script type="text/template" id="ListTemplate">
+  <%
+  for(var i=0; i<list.length; i++) {
+    var search = list[i];
+  %>
+    <li>
+      <div><a href="<%= search.link %>"><%= search.title %></a></div>
+    </li>
+  <%} %>
+  </script>
+  <FORM  id="button" style="display:none" ><INPUT type='BUTTON' value='더보기' onclick='buttonclick()'></FORM>
+
+  <script src="jsonp.js"></script>
+  <script src="openapi.js"></script>
+  <script src="ajax.js"></script>
+  <script src="tmpl.js"></script>
+</body>
+</html>
